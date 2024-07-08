@@ -1,0 +1,88 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("https://img.freepik.com/free-photo/handsome-confident-hipster-modelsexy-unshaven-man-dressed-summer-stylish-green-hoodie-jeans-clothes-fashion-male-with-curly-hairstyle-posing-studio-isolated-blue_158538-26586.jpg?w=1060&t=st=1706359237~exp=1706359837~hmac=09b1c95dae1cdbb170fc8f5c21f405c8fd57c3ed22efb28b69b7920ca0bf039d")
+    no-repeat center center fixed;
+  background-size: cover;
+}
+
+.login-form-container {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 20rem;
+}
+
+.login-form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.form-footer label {
+  cursor: pointer;
+}
+
+.form-footer a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #007bff;
+  color: white;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #b1161e;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.register-link a {
+  color: #007bff;
+}
+
+
+.text-button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #8e9092;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .text-button:focus {
+    outline: none;
+  }
+  

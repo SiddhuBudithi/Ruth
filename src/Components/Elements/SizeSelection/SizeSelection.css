@@ -1,0 +1,183 @@
+/* SizeSelection.css */
+
+.size-buttons-size-container {
+  margin: 10px 0;
+  padding: 0 15px;
+}
+
+.size-buttons-size-header {
+  margin: 0 0 10px;
+  position: relative;
+  line-height: 1;
+}
+
+.size-buttons-select-size {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.size-buttons-size-chart {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.size-buttons-show-size-chart {
+  outline: 0;
+  background-color: transparent;
+  border: 0;
+  letter-spacing: 0.5px;
+  text-align: right;
+  padding: 5px;
+  color: #ff3e6c;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.size-buttons-arrow {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 4px;
+  border: solid #ff3e6c;
+  border-width: 2px 2px 0 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-bottom: 2px;
+}
+
+.size-buttons-size-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.size-buttons-tipAndBtnContainer {
+  display: flex;
+  align-items: center;
+}
+
+.size-buttons-buttonContainer {
+  position: relative;
+}
+
+.size-buttons-size-button-default {
+  background-color: #fff;
+  border: 1px solid #bfc0c6;
+  border-radius: 50px;
+  padding: 0;
+  min-width: 50px;
+  transition: all 0.3s;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  color: #282c3f;
+}
+
+.size-buttons-size-button-default:hover {
+  /* Hover state */
+}
+
+.size-buttons-size-strike-show {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d5d6d9;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.size-buttons-unified-size {
+  margin: 0;
+  font-size: 14px;
+  padding: 0 8px;
+  font-weight: 700;
+}
+
+.size-buttons-inventory-left-hidden {
+  visibility: hidden;
+}
+
+.size-buttons-inventory-left {
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  width: 90%;
+  left: 7%;
+  background-color: #ff905a;
+  color: #fff;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.size-buttons-sizeTip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  min-width: 400px;
+  visibility: hidden;
+  -webkit-transition: visibility 0.1s ease-out;
+  transition: visibility 0.1s ease-out;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.size-buttons-sizeTip .size-buttons-sizeTipMeta {
+  position: absolute;
+  min-width: 400px;
+  left: 0;
+  bottom: 10px;
+  text-align: left;
+  border: 1px solid #e9e9eb;
+  background-color: #fff;
+  padding: 18px;
+  z-index: 29;
+  border-radius: 4px;
+  font-weight: 400;
+  -webkit-box-shadow: 0 2px 16px 0 rgba(40, 44, 63, 0.1);
+  box-shadow: 0 2px 16px 0 rgba(40, 44, 63, 0.1);
+}
+
+.size-buttons-bodymeasure {
+  color: #535665;
+}
+
+.size-buttons-measurementType {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.size-buttons-measurementName {
+  font-size: 12px;
+  color: #8d8f9a;
+}
+
+.size-buttons-sizeChartInfo {
+  margin-top: 10px;
+  color: #ff3e6c;
+}
+
+.size-buttons-recoContainer {
+  text-align: center;
+  padding: 0 15px;
+  margin-top: 20px;
+}
+
+.size-buttons-recText {
+  font-size: 14px;
+}
+
+.size-buttons-hide {
+  display: none;
+}

@@ -1,0 +1,42 @@
+.color-selection {
+  margin-top: 20px;
+  display: flex;
+}
+
+.color-selection .color-option {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.color-selection input[type="radio"] {
+  display: none;
+}
+
+.color-selection .color-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.color-selection .color-option.selected .color-circle {
+  border-color: #000000; /* Highlighted color */
+
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+  .color-selection {
+    margin-top: 10px;
+  }
+
+  .color-selection .color-option {
+    margin-right: 5px;
+  }
+
+  .color-selection .color-circle {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,76 @@
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  padding: 20px;
+  min-width: 150px;
+}
+
+.footer-section h2 {
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  color: #bbbbbb;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+  transition: color 0.2s;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.socials {
+  margin-top: 10px;
+}
+
+.socials svg {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.socials svg:hover {
+  color: #1da1f2; /* Twitter blue for example, can be changed */
+}
+
+.footer-bottom {
+  background: #222;
+  color: #777;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+}

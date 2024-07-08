@@ -1,0 +1,229 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding: 10px;
+  background-color: #777676;
+  color: white; 
+}
+
+.brandname {
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.logopic {
+  padding-top: 5px;
+  padding-left: 15px;
+  width: auto; 
+  height: 50px; 
+}
+
+.nav-menu ul {
+  list-style: none;
+  flex-direction: column;
+  width: 100%;
+  display: none;
+  gap: 20px;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu button {
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: cyan;
+  padding: 0.5rem 1rem; 
+}
+
+
+.nav-menu button:hover {
+  background-color: white; 
+  color: black; 
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #4d4d4d;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1; 
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.2s, transform 0.1s;
+  width: auto;
+}
+
+.nav-menu li:hover .dropdown {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  
+}
+
+.dropdown-menu {
+  background-color: #4d4d4d;
+  border-radius: 5px; 
+  border: none;
+  position: absolute;
+  right: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  z-index: 1000;
+}
+
+.dropdown button:hover {
+  background-color: #666; /* A lighter background on hover */
+}
+
+.search-box {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  background-color: #4d4d4d; 
+  border-radius: 25px; 
+  border: 1px solid #4d4d4d; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.search-input {
+  border: none;
+  padding: 10px 20px;
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  font-size: 1rem;
+  color: white;
+}
+
+.search-button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #666;
+  border-radius: 0 15px 15px 0;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #e6356c;
+}
+
+.icon-dropdown {
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white; 
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.dropdown-item:hover {
+  background-color: #f7f7f7;
+}
+
+.header,
+.nav-menu button,
+.dropdown-item {
+  font-family: "Arial", sans-serif; 
+  font-weight: normal; 
+}
+
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+
+/* Styles for larger screens using a media query */
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 40px;
+  }
+
+  .brandname, .icons, .search-box {
+    width: auto; /* Auto width on larger screens */
+    margin-bottom: 0; /* No bottom margin */
+  }
+
+  .nav-menu ul {
+    flex-direction: row; /* Inline menu items */
+    display: flex; /* Show navigation */
+  }
+
+  .nav-menu li {
+    position: relative; /* Needed for dropdown positioning */
+  }
+
+  /* Other styles adjusted for larger screens */
+}
+
+/* You may add additional breakpoints for larger screens */
+@media (min-width: 1024px) {
+  /* Adjust styles for desktop screens */
+}
+
+/* Hamburger menu icon (visible on small screens) */
+.hamburger-menu {
+  display: none; /* Initially hidden */
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px; /* Adjust the size as needed */
+  padding: 10px;
+}
+
+/* Hide the hamburger menu on larger screens */
+@media (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .hamburger-menu {
+    display: flex; /* Show the hamburger menu on small screens */
+  }
+}
+
+.nav-menu.is-visible {
+  display: flex;
+}

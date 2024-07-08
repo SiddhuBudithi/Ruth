@@ -1,0 +1,32 @@
+/* ProfilePage.css */
+.profile-page-container {
+    display: flex;
+  }
+  
+  .profile-sidebar {
+    /* Sidebar styles */
+    width: 250px; /* Adjust width as needed */
+    /* ...other styles */
+  }
+  
+  .profile-content {
+    flex-grow: 1;
+    /* ...other styles */
+  }
+  
+  /* Media query for responsive design */
+  @media (max-width: 768px) {
+    .profile-page-container {
+      flex-direction: column;
+    }
+  
+    .profile-sidebar {
+      width: 100%;
+      /* ...other styles */
+    }
+  
+    /* .profile-content {
+    
+    } */
+  }
+  

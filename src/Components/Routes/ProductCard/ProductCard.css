@@ -1,0 +1,122 @@
+.product-card {
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+
+.product-card:hover {
+  transform: translateY(-7px);
+}
+
+.product-label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red; 
+  color: white;
+  padding: 2px 5px;
+  font-size: 0.8em;
+  z-index: 1;
+}
+
+.product-pricing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.product-image {
+  /* max-width: 100%; */
+  /* max-height: 100%; */
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.product-info {
+  /* margin-bottom: 10px; */
+  padding: 16px;
+  text-align: center;
+
+}
+
+.product-name {
+  font-size: 1.1rem;
+  color: #333;
+  /* margin-bottom: 5px; */
+  white-space: nowrap;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.sale-price {
+  color: #ff4d4d;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.original-price {
+  font-weight: bold;
+  text-decoration: line-through;
+  color: #7d7d7d;
+}
+
+.view-product-btn {
+  background-color: blue; /* Adjust the color based on your theme */
+  color: white;
+  text-decoration: none;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.view-product-btn:hover {
+  background-color: darkblue; /* Darken button on hover */
+}
+
+.product-actions {
+  padding: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #f9f9f9;
+}
+
+.product-actions button {
+  border: none;
+  /* background: none; */
+  cursor: pointer;
+  background-color: rgb(169, 169, 180);
+}
+
+.wishlist-btn, .cart-btn {
+  font-size: 1.5rem;
+  
+}
+
+.wishlist-btn {
+  color: #ff4081;
+}
+
+.cart-btn {
+  color: #5f99f5;
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    margin-bottom: 20px;
+  }
+}

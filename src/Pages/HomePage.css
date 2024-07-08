@@ -1,0 +1,223 @@
+.featured-products-carousel .slick-slide {
+  display: flex;
+  position: relative; /* Set position context for caption */
+  justify-content: center;
+  align-items: center;
+}
+
+.featured-product-banner img {
+  width: 1430px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 75%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust to center the text block */
+  color: white; /* Text color */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 5px 10px; /* Padding around text */
+  border-radius: 5px; /* Optional: Rounded corners */
+  text-align: center; /* Center text within the caption */
+  max-width: 80%; /* Maximum width of caption */
+  box-sizing: border-box;
+}
+
+.slick-next {
+  right: 25px; /* Adjust as needed */
+}
+
+.slick-prev {
+  left: 25px; /* Adjust as needed */
+}
+
+/* Categories Section */
+.categories {
+  padding: 20px;
+  text-align: center;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+  gap: 20px;
+}
+
+.category-item {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.category-item a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
+
+.best-sellers {
+  padding: 20px;
+  background-color: #f5f5f5; /* Example background color */
+}
+
+.best-sellers h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.best-sellers-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+
+/* Newsletter Section */
+.newsletter-signup form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-signup input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.newsletter-signup button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #5cb85c;
+  color: white;
+  cursor: pointer;
+}
+
+.newsletter-signup button:hover {
+  background-color: #4cae4c;
+}
+
+/* Promotions Section */
+.promotions {
+  background-color: #eef4f7; /* Light background color */
+  padding: 20px;
+  text-align: center;
+}
+
+.promotion-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns by default */
+  gap: 20px;
+}
+
+.promotion-item {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.promotion-item h3 {
+  margin-bottom: 10px;
+}
+
+.promotion-item p {
+  margin-bottom: 15px;
+}
+
+.promotion-item a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .promotion-items {
+    grid-template-columns: 1fr; /* 1 column on smaller screens */
+  }
+}
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .home-page {
+      padding: 10px;
+    }
+  
+    /* Add responsive adjustments as needed */
+  }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .categories {
+    grid-template-columns: 1fr; /* Single column for mobile */
+  }
+
+  .newsletter-signup form {
+    align-items: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .best-sellers-grid {
+    grid-template-columns: repeat(3, 1fr); /* Adjust number of columns for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .best-sellers-grid {
+    grid-template-columns: repeat(2, 1fr); /* Adjust number of columns for even smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .best-sellers-grid {
+    grid-template-columns: 1fr; /* 1 column for mobile screens */
+  }
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .slick-next, .slick-prev {
+    right: 10px; /* Adjust as needed for mobile */
+    left: 10px;  /* Adjust as needed for mobile */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .category-grid {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+}
+
+
+/* Adjustments for Tablets */
+@media (max-width: 768px) {
+  .featured-product-banner img {
+    max-height: 200px; /* Adjust height for smaller screens */
+  }
+
+  .carousel-caption {
+    font-size: 14px; /* Smaller font size for captions */
+  }
+}
+
+/* Adjustments for Mobile Phones */
+@media (max-width: 480px) {
+  .featured-product-banner img {
+    max-height: 150px; /* Further reduce height for mobile screens */
+  }
+
+  .carousel-caption {
+    font-size: 12px; /* Even smaller font size for smaller screens */
+  }
+}
+
+/* Additional responsive adjustments can be added as needed */

@@ -1,0 +1,121 @@
+/* CSS Variables for Theme Consistency */
+:root {
+  --primary-color: #007bff;
+  --hover-color: #0056b3;
+  --background-color: #f0f2f5;
+  --text-color: #333;
+  --padding: 16px;
+  --margin: 20px;
+  --border-radius: 8px;
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
+}
+
+/* Container and Grid Layout */
+.checkout-container {
+  margin: var(--margin) auto;
+  max-width: 1200px; /* Responsive max-width */
+  padding: var(--padding);
+  background-color: var(--background-color);
+}
+
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--margin);
+}
+
+@media screen and (min-width: 768px) {
+  .checkout-grid {
+    grid-template-columns: 2fr 1fr; /* Two-column layout for wider screens */
+  }
+}
+
+/* Form Input and Button Enhancements */
+input[type="text"], input[type="number"], input[type="tel"], select, input[type="text"]:focus, select:focus {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+  transition: border 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, select:focus {
+  border-color: var(--hover-color);
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+button {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+/* Responsive Typography */
+h2, h5 {
+  color: var(--text-color);
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+}
+
+/* Section Enhancements */
+.section, .shipping-info, .cart-data {
+  background-color: white;
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.shipping-info, .cart-data {
+  background-color: #e9ecef;
+}
+
+/* Payment Button Enhancements */
+.payment-button button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--padding);
+  border: none;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease;
+}
+
+.payment-button button:hover {
+  background-color: var(--hover-color);
+}
+
+/* Input and Select Box Styling */
+input[type="text"], input[type="number"], select {
+  font-size: 1rem; /* Responsive font size */
+}
+
+/* Error and Success Message Styling */
+.error-message, .success-message {
+  font-size: 0.875rem; /* Smaller font size for messages */
+  padding: var(--padding);
+}
+
